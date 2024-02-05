@@ -1,0 +1,44 @@
+<section id="gallery" class="portfolio">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Gallery</h2>
+            <h3>Products<span> Gallery</span></h3>
+            <p></p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <!-- <li data-filter=".m">Silicons Steel and Stampning</li> -->
+                    <li data-filter=".a">Alternator,startor and AC Compressors</li>
+                    <li data-filter=".d">Scrap Dismantling</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="{{ 'col-lg-4 col-md-6 portfolio-item '+ photo.type }}" *ngFor="let photo of products">
+                <ng-container *ngIf="photo.type=='m'">
+                    <a href="{{ 'assets/img/gallery/manufacture/'+photo.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                        <img src="{{ 'assets/img/gallery/manufacture/'+photo.url }}" class="img-fluid" alt="">
+                    </a>
+                </ng-container>
+                <ng-container *ngIf="photo.type=='a'">
+                    <a href="{{ 'assets/img/gallery/asc/'+photo.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                        <img src="{{ 'assets/img/gallery/asc/'+photo.url }}" class="img-fluid" alt="">
+                    </a>
+                </ng-container>
+                <ng-container>
+                    <a href="{{ 'assets/img/gallery/dismantling/'+photo.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                        <img src="{{ 'assets/img/gallery/dismantling/'+photo.url }}" class="img-fluid" alt="">
+                    </a>
+                </ng-container>
+
+            </div>
+
+        </div>
+    </div>
+</section>

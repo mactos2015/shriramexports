@@ -1,0 +1,28 @@
+<section id="product" class="services">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Products</h2>
+            <h3>Our <span>Products</span></h3>
+            <!-- <p>We produce Alternator,startor and AC Compressors and remove metal debris.</p> -->
+            <p>We import various kind of electrical appratus equipment scrap and dismantle, segregation and bifurcation of various grade of metals</p>
+        </div>
+        <div class="row">
+
+
+
+            <!-- imagepath="assets/img/products/".{{products.url}}; -->
+            <div class="col-md-4" *ngFor="let item of products">
+                <div class="card mb-4 box-shadow ">
+                    <img class="card-img-top" alt="" style="height: 225px; width: 100%; display: block;" src="{{'assets/img/products/'+item.url}}">
+                    <div class="card-body">
+                        <h6 class="text-center">
+                            {{item.name}}
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
