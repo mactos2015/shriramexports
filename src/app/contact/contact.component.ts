@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { cObj } from '../app.constant';
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+  protected c = cObj;
 }
