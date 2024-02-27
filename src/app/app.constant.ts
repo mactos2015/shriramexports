@@ -9,8 +9,10 @@ import { CommonModule } from '@angular/common';
 // }
 
 export const cObj = {
-    EMAIL:"sksteeludhyog@gmail.com",
-    PHONE:"+91 98181 06403",
-    ADDRESS:"Plot No. S-2, Shed No. 6,<BR> Diamond Industrial Park, Sachin, Surat 394230<BR>Gujarat, India"
-
+    //EMAIL:"sksteeludhyog@gmail.com",
+    //EMAIL:"ankit.iipm@gmail.com",
+    EMAIL:"shreeramexports181@gmail.com",
+    PHONE:"+91 98184 31649",
+    ADDRESS:"Plot No. 181, Surat Speacial Economic Zone,<BR> Sachin, Surat-394230<BR>Gujarat, India",
+    NAME:"Shree Ram Exports"
 };

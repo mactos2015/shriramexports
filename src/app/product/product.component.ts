@@ -20,4 +20,8 @@ export class ProductComponent {
     {name:'E-meter Scrap', url:'e-meters.jpg'},
     {name:'Cable scrap', url:'cables.jpg'}
   ]
+  
+  constructor(){
+    console.log('Products module loaded.');
+  }
 }

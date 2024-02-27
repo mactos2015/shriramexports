@@ -9,4 +9,7 @@ import { cObj } from '../app.constant';
 })
 export class ContactComponent {
   protected c = cObj;
+  constructor(){
+    console.log('Contact module loaded.');
+  }
 }

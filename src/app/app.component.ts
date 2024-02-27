@@ -17,4 +17,7 @@ export class AppComponent {
   phone = '+91 98181 06403';
   email = "sksteeludhyog@gmail.com";
 
+    constructor(){
+      console.log('App module loaded.');
+    }
 }

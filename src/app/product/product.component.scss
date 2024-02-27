@@ -1,0 +1,16 @@
+/* Products */
+
+.card-body {
+    color: #062b5b;
+    background-color: #f1f6fe;
+}
+
+.card {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.05);
+}

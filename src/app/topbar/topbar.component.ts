@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { cObj } from '../app.constant';
 @Component({
   selector: 'app-topbar',
   standalone: true,
@@ -9,5 +9,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './topbar.component.scss'
 })
 export class TopbarComponent {
-
+  protected c = cObj;
 }

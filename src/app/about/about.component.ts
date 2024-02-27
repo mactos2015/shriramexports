@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { cObj } from '../app.constant';
 @Component({
   selector: 'app-about',
   standalone: true,
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-
+  protected c=cObj;
+  constructor(){
+    console.log('About module loaded.');
+  }
 }
