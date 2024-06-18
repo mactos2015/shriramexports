@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { TopbarComponent } from './topbar/topbar.component';
 import {FooterComponent} from './footer/footer.component';
-
+import { GalleryComponent } from './gallery/gallery.component';
+import $ from 'jquery';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ TopbarComponent, FooterComponent, RouterModule, CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [GalleryComponent, TopbarComponent, FooterComponent, RouterModule, CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -18,6 +19,9 @@ export class AppComponent {
   email = "sksteeludhyog@gmail.com";
 
     constructor(){
-      console.log('App module loaded.');
+      
+    }
+    ngAfterViewInit(){
+    
     }
 }

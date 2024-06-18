@@ -5,6 +5,7 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
 (function() {
     "use strict";
 
@@ -38,12 +39,11 @@
      * Easy on scroll event listener 
      */
     const onscroll = (el, listener) => {
-        el.addEventListener('scroll', listener)
-    }
-
-    /**
-     * Navbar links active state on scroll
-     */
+            el.addEventListener('scroll', listener)
+        }
+        /**
+         * Navbar links active state on scroll
+         */
     let navbarlinks = select('#navbar .scrollto', true)
     const navbarlinksActive = () => {
         let position = window.scrollY + 200
@@ -242,9 +242,10 @@
     /**
      * Initiate portfolio lightbox 
      */
-    const portfolioLightbox = GLightbox({
-        selector: '.portfolio-lightbox'
-    });
+
+    // const portfolioLightbox = GLightbox({
+    //     selector: '.portfolio-lightbox'
+    // });
 
     /**
      * Portfolio details slider

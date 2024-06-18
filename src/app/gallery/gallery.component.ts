@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import GLightbox from 'glightbox';
 
 @Component({
   selector: 'app-gallery',
@@ -30,5 +31,9 @@ export class GalleryComponent {
     {url:'trasnf3.jpg', type:'d'}
   ];
   imagepath="assets/img/gallery/dismantling/aluminiumscrap.jpg";
-
+  ngAfterViewInit(){
+    GLightbox({
+           selector: '.portfolio-lightbox'
+       });
+  }
 }

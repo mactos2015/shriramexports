@@ -10,6 +10,5 @@ import { cObj } from '../app.constant';
 export class AboutComponent {
   protected c=cObj;
   constructor(){
-    console.log('About module loaded.');
   }
 }
